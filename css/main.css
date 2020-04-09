@@ -20,6 +20,39 @@ body {
   font-family: 'helvetica neue', sans-serif;
   background-color: #193549;
 }
+
+.JS {
+  font-size: 40px;
+  color: var(--base);
+}
+.title {
+  font-size: 35px;
+  color: white;
+}
+.title-h3 {
+  font-size: 25px;
+  color: white;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.controls {
+  margin-top: 50px;
+  margin-bottom: 25px;
+}
+.label {
+  color: white;
+  font-size: 20px;
+  /* margin-right: 5px; */
+}
+.btn {
+  background-color: white;
+  border-radius: 5px;
+  height: 20px;
+  background: #193549;
+}
+
+/* estilos para la decoración de los imputs */
+
 input[type='range'] {
   -webkit-appearance: none;
   margin: 18px 0;
@@ -50,36 +83,6 @@ input[type='range']::-webkit-slider-thumb {
 }
 input[type='range']:focus::-webkit-slider-runnable-track {
   background: #367ebd;
-}
-
-.JS {
-  font-size: 40px;
-  color: var(--base);
-}
-.title {
-  font-size: 35px;
-  color: white;
-}
-.title-h3 {
-  font-size: 25px;
-  color: white;
-  margin-top: 20px;
-  margin-bottom: 20px;
-}
-.controls {
-  margin-top: 50px;
-  margin-bottom: 25px;
-}
-.label {
-  color: white;
-  font-size: 20px;
-  /* margin-right: 5px; */
-}
-.btn {
-  background-color: white;
-  border-radius: 5px;
-  height: 20px;
-  background: #193549;
 }
 
 /* estilos para los botones de subir tu foto */

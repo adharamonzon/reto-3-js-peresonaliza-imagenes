@@ -1,5 +1,7 @@
 'use strict';
 
+//interacción estilos foto
+
 const inputs = document.querySelectorAll('.controls input');
 
 function handleUpdate() {
@@ -18,7 +20,6 @@ const profilePreview = document.querySelector('.js__profile-preview');
 const fr = new FileReader();
 
 const getImage = (ev) => {
-  debugger;
   var myFile = ev.currentTarget.files[0];
   fr.addEventListener('load', writeImage);
   fr.readAsDataURL(myFile);
