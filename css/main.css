@@ -10,13 +10,6 @@
   --blur: 0px;
 } /* van a ser nuestras variables por defecto, los usaremos en la img. */
 
-.image {
-  width: 350px;
-  height: auto;
-  padding: var(--spacing);
-  background: var(--base);
-  filter: blur(var(--blur));
-}
 /* css -- para usar la variable que hemos definido en la pseudoclase */
 body {
   display: flex;
@@ -30,7 +23,7 @@ body {
 input[type='range'] {
   -webkit-appearance: none;
   margin: 18px 0;
-  width: 300px;
+  width: 150px;
 }
 input[type='range']:focus {
   outline: none;
@@ -39,7 +32,6 @@ input[type='range']::-webkit-slider-runnable-track {
   width: 100%;
   height: 8.4px;
   cursor: pointer;
-  animate: 0.2s;
   box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
   background: #3071a9;
   border-radius: 1.3px;
@@ -64,16 +56,61 @@ input[type='range']:focus::-webkit-slider-runnable-track {
   font-size: 40px;
   color: var(--base);
 }
-.h2 {
+.title {
   font-size: 35px;
   color: white;
 }
+.title-h3 {
+  font-size: 25px;
+  color: white;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
 .controls {
   margin-top: 50px;
-  margin-bottom: 50px;
+  margin-bottom: 25px;
 }
 .label {
   color: white;
   font-size: 20px;
   /* margin-right: 5px; */
+}
+.btn {
+  background-color: white;
+  border-radius: 5px;
+  height: 20px;
+  background: #193549;
+}
+
+/* estilos para los botones de subir tu foto */
+.profile__preview {
+  height: 50px;
+  width: 50px;
+}
+
+.profile__preview {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: 1px solid #ccc;
+}
+
+.profile__preview {
+  width: 50px;
+  height: 50px;
+  margin-left: 15px;
+}
+.action {
+  display: flex;
+  margin-bottom: 20px;
+  align-items: center;
+}
+
+.profile-image {
+  width: 700px;
+  height: 500px;
+  background-size: cover;
+  border: solid var(--spacing);
+  border-color: var(--base);
+  filter: blur(var(--blur));
 }

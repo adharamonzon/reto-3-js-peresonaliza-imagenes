@@ -3,23 +3,33 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/main.css" />
     <title>Personaliza tus imágenes</title>
   </head>
   <body>
-    <h2 class="h2">Update CSS variables with <span class="JS">JS</span></h1>
-      <div class="controls">
-        <label class="label" for="spacing">spacing:</label>
-        <input class="input" type="range" name="spacing" min="5" max="80" value="10" data-sizing="px">
-     
-        <label class="label" for="blur">Blur:</label>
-        <input class="input" type="range" name="blur" min="0" max="25" value="0" data-sizing="px">
-  
-        <label class="label" for="blur">Base Color:</label>
-        <input class="input" type="color" name="base" value="#ffc600" >
-      </div>
+    <h2 class="title">Update CSS variables with <span class="JS">JS</span></h2>
+    <div class="controls">
+      <label class="label" for="spacing">spacing:</label>
+      <input class="input" type="range" name="spacing" min="5" max="80" value="10" data-sizing="px" />
 
-      <img class="image" src="css/images/madrid.jpg"/>
- <script src="./js/main.js"></script>
- </body>
+      <label class="label" for="blur">Blur:</label>
+      <input class="input" type="range" name="blur" min="0" max="25" value="0" data-sizing="px" />
+
+      <label class="label" for="blur">Base Color:</label>
+      <input class="input" type="color" name="base" value="#ffc600" />
+    </div>
+
+    <h3 class="title-h3">sube tu propia imagen:</h3>
+
+    <div class="action">
+      <input class="btn js__profile-upload-btn" type="file" name="" id="img-selector" />
+      <div class="profile__preview js__profile-preview"></div>
+    </div>
+
+    <div class="profile-image js__profile-image" style="background-image: url(./css/images/madrid.jpg);">
+      <img style="background-image: url(./css/images/madrid.jpg);" />
+    </div>
+
+    <script src="./js/main.js"></script>
+  </body>
 </html>
